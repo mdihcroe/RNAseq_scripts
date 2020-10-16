@@ -2,7 +2,7 @@
 
 IN_PATH=$1
 
-source dual_RNA_seq/Mtb/constants.sh
+source ~/dual_RNA_seq/Mtb/constants.sh
 
 for file in ${IN_PATH}/*.sam
 do
