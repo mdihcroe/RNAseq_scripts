@@ -21,7 +21,7 @@ source ~/dual_RNA_seq/Mtb/constants.sh
 mkdir ${out_folder}
 cd ${out_folder}
 
-for file in ${IN_PATH}/B*.bam
+for file in ${IN_PATH}/A*.bam
 do
 	sample_name="$(basename -s .bam ${file})"
 	echo ${sample_name}
