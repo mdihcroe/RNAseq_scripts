@@ -5,9 +5,9 @@ out_folder=${IN_PATH}/fastqc
 
 mkdir ${out_folder}
 
-for file in ${IN_PATH}/*.fastq.20
+for file in ${IN_PATH}/*.fastq.gz
 do
-	sample="$(basename -s .fastq.20 ${file})"
+	sample="$(basename -s .fastq.gz ${file})"
 	
     mkdir ${out_folder}/${sample}
 	fastqc ${file} --outdir=${out_folder}/${sample}
